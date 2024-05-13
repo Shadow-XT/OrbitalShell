@@ -1,16 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    
-    <TargetFramework>net5.0</TargetFramework>   
-	  
-    <RootNamespace>OrbitalShell</RootNamespace>    
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>OrbitalShell</RootNamespace>
     <AssemblyName>orbsh</AssemblyName>
-    <StartupObject></StartupObject>
+    <StartupObject>
+    </StartupObject>
     <NeutralLanguage>en-US</NeutralLanguage>
-
-	<PackageId>OrbitalShell</PackageId>
+    <PackageId>OrbitalShell</PackageId>
     <IsPackable>true</IsPackable>
     <Authors>Franck Gaspoz</Authors>
     <Company>Orbital Shell</Company>
@@ -19,93 +16,78 @@
     <Copyright>(c) 2020 Licence MIT</Copyright>
     <Version>1.0.9</Version>
     <InformationalVersion>1.0.9</InformationalVersion>
-
     <PackageReleaseNotes>initial stable release (milestone 1)</PackageReleaseNotes>
     <ApplicationIcon>assets\robotazteque.ico</ApplicationIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<PackageProjectUrl>https://orbitalshell.github.io/Orbital-Shell/</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/OrbitalShell/Orbital-Shell.git</RepositoryUrl>
+    <PackageProjectUrl>https://orbitalshell.github.io/Orbital-Shell/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OrbitalShell/Orbital-Shell.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>prompt git git-branch git-status bash linux shell interactive csharp netcore5 netstandard21 netcore31 cli command-line-tool command-line-parser command-line-interface</PackageTags>
     <PackageIcon>content\assets\robotazteque.png</PackageIcon>
-	  
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-	  
-	<RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-	  
-	<Platforms>AnyCPU;x86</Platforms>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
     <DocumentationFile>bin/Debug/net5.0/orbsh.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;1572;1573</NoWarn>
   </PropertyGroup>
-
-	 
   <ItemGroup>
-	  <None Include="assets\robotazteque.ico">
-		  <Pack>True</Pack>
-		  <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
-	  </None>
-	  <None Include="assets\robotazteque.png">
-		  <Pack>True</Pack>
-		  <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
-	  </None>
-	  <None Include="LICENSE.md">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		  <Pack>True</Pack>
-		  <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
-		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </None>
-	  <None Include="README.md">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		  <Pack>True</Pack>
-		  <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
-		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </None>
-
-	  <None Include="scripts\**">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		  <Pack>True</Pack>
-		  <PackagePath>contentFiles/any/net5.0/scripts/;content/scripts/</PackagePath>
-		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </None>
-	  <None Include="data\**">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		  <Pack>True</Pack>
-		  <PackagePath>contentFiles/any/net5.0/scripts/;content/scripts/</PackagePath>
-		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </None>
-	
+    <None Include="assets\robotazteque.ico">
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
+    </None>
+    <None Include="assets\robotazteque.png">
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
+    </None>
+    <None Include="LICENSE.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </None>
+    <None Include="README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </None>
+    <None Include="scripts\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/scripts/;content/scripts/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </None>
+    <None Include="data\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/scripts/;content/scripts/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </None>
   </ItemGroup>
-
-	 
   <ItemGroup>
     <Compile Remove="ServicesInitializer.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\OrbitalShell-ConsoleApp\OrbitalShell-ConsoleApp.csproj" />
     <ProjectReference Include="..\OrbitalShell-Kernel\OrbitalShell-Kernel.csproj" />
     <ProjectReference Include="..\OrbitalShell-Kernel-Commands\OrbitalShell-Kernel-Commands.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Component\Shell\Defaults\.profile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -120,5 +102,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
