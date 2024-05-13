@@ -48,7 +48,11 @@
     //"terminal.integrated.rendererType": "canvas",
     "debug.onTaskErrors": "showErrors",
     "csharp.semanticHighlighting.enabled": true,
-    "omnisharp.enableImportCompletion": true,
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
     "editor.suggestOnTriggerCharacters": true,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
 }

@@ -129,7 +129,7 @@ namespace OrbitalShell.Component.CommandLine.Parsing.Sentence
             {
                 { 'r', '\r' },
                 { 'n', '\n' },
-                { 'n', '\b' },
+                { 'b', '\b' },
                 { 't', '\t' }
             };
 

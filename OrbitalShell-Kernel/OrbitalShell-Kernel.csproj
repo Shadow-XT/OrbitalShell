@@ -1,14 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-	<TargetFramework>net5.0</TargetFramework>
-
+    <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>OrbitalShell</RootNamespace>
     <AssemblyName>OrbitalShell-Kernel</AssemblyName>
     <NeutralLanguage>en-US</NeutralLanguage>
-
     <PackageId>OrbitalShell-Kernel</PackageId>
-	<IsPackable>true</IsPackable>
+    <IsPackable>true</IsPackable>
     <Authors>Franck Gaspoz</Authors>
     <Company>Orbital Shell</Company>
     <Product>Orbital Shell - Kernel</Product>
@@ -16,37 +13,28 @@
     <Copyright>(c) 2020 Licence MIT</Copyright>
     <Version>1.0.10</Version>
     <InformationalVersion>1.0.10</InformationalVersion>
-
-	<PackageReleaseNotes>milestone 1</PackageReleaseNotes>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageProjectUrl>https://orbitalshell.github.io/Orbital-Shell/</PackageProjectUrl>
-	  <RepositoryUrl>https://github.com/OrbitalShell/Orbital-Shell.git</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<PackageTags>prompt git git-branch git-status bash linux shell interactive csharp netcore5 netstandard21 netcore31 cli command-line-tool command-line-parser command-line-interface</PackageTags>	
-	<PackageIcon>content\assets\robotazteque.png</PackageIcon>
-
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-
-	<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-	
+    <PackageReleaseNotes>milestone 1</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://orbitalshell.github.io/Orbital-Shell/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OrbitalShell/Orbital-Shell.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>prompt git git-branch git-status bash linux shell interactive csharp netcore5 netstandard21 netcore31 cli command-line-tool command-line-parser command-line-interface</PackageTags>
+    <PackageIcon>content\assets\robotazteque.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <NoDefaultExcludes>true</NoDefaultExcludes>
-	  
-	<Platforms>AnyCPU;x86</Platforms>
-	  
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
@@ -54,42 +42,34 @@
     <DocumentationFile>bin/Debug/net5.0/OrbitalShell-Kernel.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;1572;1573</NoWarn>
   </PropertyGroup>
-
-	<ItemGroup>
-		<None Remove="assets\robotazteque.png" />
-		<None Include="assets\robotazteque.png">
-			<Pack>True</Pack>
-			<PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
-		</None>
-		<None Include="LICENSE.md">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Pack>True</Pack>
-			<PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</None>
-		<None Include="Modules/read-me.txt">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Pack>True</Pack>
-			<PackagePath>contentFiles/any/net5.0/Modules;content/Modules</PackagePath>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</None>
-	</ItemGroup>
-
+  <ItemGroup>
+    <None Remove="assets\robotazteque.png" />
+    <None Include="assets\robotazteque.png">
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
+    </None>
+    <None Include="LICENSE.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </None>
+    <None Include="Modules/read-me.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>contentFiles/any/net5.0/Modules;content/Modules</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OrbitalShell-ConsoleApp\OrbitalShell-ConsoleApp.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Component\Shell\Hook\Attributes\" />
     <Folder Include="Component\Shell\Module\Attributes\" />
     <Folder Include="Component\Shell\Module\Command\" />
     <Folder Include="Lib\Net\" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="5.0.3" />
-  </ItemGroup>
-
   <ItemGroup>
     <None Update="Component\Shell\Defaults\.aliases">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -110,5 +90,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="8.0.4" />
+  </ItemGroup>
 </Project>
