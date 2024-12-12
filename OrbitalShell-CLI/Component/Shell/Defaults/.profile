@@ -14,7 +14,8 @@ echo "(df=gray)" -n
 #prompt "(RSTXTA)(b8=19) (b8=20) $USERDOMAIN (b8=19,f8=46) (b8=18,f=yellow)>(b8=17) (rdc)"
 #prompt "(RSTXTA)(f=cyan)$USERDOMAIN (f=white)> (rdc)"
 #prompt "(RSTXTA) > "
-prompt "(RSTXTA)(b8=18) (b8=19) (b8=30)O(b8=20)rbital (b8=30)S(b8=20)hell(b8=19,f8=46) (b8=18,f=yellow)>(b8=17) (rdc)"
+# prompt "(RSTXTA)(b8=18) (b8=19) (b8=30)O(b8=20)rbital (b8=30)S(b8=20)hell(b8=19,f8=46) (b8=18,f=yellow)>(b8=17) (rdc)"
+prompt "(RSTXTA)(f=green)(uon)(exec=[[OrbitalShell.Lib.FileSystem.FileSystemPath.UnescapePathSeparators(System.Environment.CurrentDirectory)]])(tdoff)(br)(RSTXTA)(f=cyan)(exec=[[System.Net.Dns.GetHostName()]]) (f=red)>_ (rdc) "
 
 # samples
 

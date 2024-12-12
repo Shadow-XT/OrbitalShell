@@ -11,7 +11,7 @@ namespace OrbitalShell.Component.Shell.Data
 {
     public class Table : DataTable
     {
-        #region init        
+        #region init
 
         public Table() : base() { }
         public Table(string tableName) : base(tableName) { }

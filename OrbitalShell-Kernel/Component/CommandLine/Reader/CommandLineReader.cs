@@ -57,7 +57,7 @@ namespace OrbitalShell.Component.CommandLine.Reader
             _instanceId++;
 #if DBG_DI_INSTANCE
             System.Console.Out.WriteLine($"new CLR #{_InstanceId}");
-#endif                        
+#endif
         }
 
         public void Initialize(
@@ -482,7 +482,7 @@ namespace OrbitalShell.Component.CommandLine.Reader
 
                                                 break;
 
-                                            // HOME : set cursor position at begin of input (just after prompt) 
+                                            // HOME : set cursor position at begin of input (just after prompt)
                                             case ConsoleKey.Home:
 
                                                 context.CommandLineProcessor.ModuleManager.ModuleHookManager

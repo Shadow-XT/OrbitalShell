@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!--<TargetFramework>net5.0</TargetFramework>-->
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>OrbitalShell</RootNamespace>
     <AssemblyName>OrbitalShell-Kernel-Commands</AssemblyName>
@@ -38,7 +37,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
-    <DocumentationFile>bin/Debug/net5.0/OrbitalShell-Kernel-Commands.xml</DocumentationFile>
+    <DocumentationFile>bin/Debug/net8.0/OrbitalShell-Kernel-Commands.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;1572;1573</NoWarn>
   </PropertyGroup>
   <ItemGroup>

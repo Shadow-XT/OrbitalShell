@@ -1,7 +1,7 @@
 FROM ubuntu:latest
-MAINTAINER Yobatman38 < yobatman [ at ] gmail.com >
+LABEL maintainer="Yobatman38 <yobatman@gmail.com>"
 
-COPY OrbitalShell-CLI/bin/Debug/net5.0/ /home/orbsh/
+COPY OrbitalShell-CLI/bin/Debug/net8.0/ /home/orbsh/
 RUN apt-get update \
     && apt-get install -y apt-transport-https wget \
     && apt autoclean \

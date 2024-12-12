@@ -25,7 +25,7 @@
             "label": "WSL Bash"
         }
     ],
-    
+
     "explorer.confirmDelete": false,
     "python.pythonPath": "C:\\Users\\franc\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "todo-tree.tree.showScanModeButton": false,
@@ -55,4 +55,5 @@
     },
     "editor.suggestOnTriggerCharacters": true,
     "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "files.insertFinalNewline": false,
 }

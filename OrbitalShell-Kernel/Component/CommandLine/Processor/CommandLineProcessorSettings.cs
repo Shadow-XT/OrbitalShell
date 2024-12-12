@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 using Microsoft.CodeAnalysis.Scripting;
 
@@ -28,7 +29,7 @@ namespace OrbitalShell.Component.CommandLine.Processor
 
             // TODO: activate after DotNetConsole is no more static - see remarks below
             /*
-            Out = new ConsoleTextWriterWrapper(System.Console.Out);   
+            Out = new ConsoleTextWriterWrapper(System.Console.Out);
             Err = new TextWriterWrapper(System.Console.Error);
             In = System.Console.In;
             */
@@ -98,7 +99,23 @@ namespace OrbitalShell.Component.CommandLine.Processor
         /// </summary>
         public string AppDataFolderName { get; set; } = "OrbitalShell";
 
-        public string ShellAppDataPath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), AppDataFolderName);
+        // public string ShellAppDataPath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), AppDataFolderName);
+        public string ShellAppDataPath
+        {
+            get
+            {
+                if ((RuntimeInformation.IsOSPlatform(OSPlatform.Linux) || RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) && Environment.UserName == "root")
+                {
+                    // /user/share/OrbitalShell
+                    return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), AppDataFolderName);
+                }
+                else
+                {
+                    // .config/OrbitalShell or AppData/Roaming/OrbitalShell
+                    return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppDataFolderName);
+                }
+            }
+        }
 
         public string AppDataRoamingUserFolderPath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppDataFolderName);
         public string UserProfileFilePath => Path.Combine(AppDataRoamingUserFolderPath, UserProfileFileName);
