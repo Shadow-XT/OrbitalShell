@@ -1,0 +1,36 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="issues" />
+    <File Path="LICENSE.md" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/docs/">
+    <File Path="docs/README.md" />
+    <File Path="docs/_config.yml" />
+  </Folder>
+  <Folder Name="/Solution Items/module-index-repository/">
+    <File Path="module-index-repository/module-list.json" />
+    <File Path="module-index-repository/readme.txt" />
+  </Folder>
+  <Project Path="OrbitalShell-CLI/OrbitalShell-CLI.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-ConsoleApp/OrbitalShell-ConsoleApp.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-Kernel-Commands/OrbitalShell-Kernel-Commands.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-Kernel/OrbitalShell-Kernel.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-UnitTests/OrbitalShell-UnitTests.csproj" />
+  <Project Path="OrbitalShell-WebAPI/OrbitalShell-WebAPI.csproj" />
+</Solution>

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>OrbitalShell</RootNamespace>
     <AssemblyName>OrbitalShell-ConsoleApp</AssemblyName>
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -37,7 +37,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <DocumentationFile>bin/Debug/net5.0/OrbitalShell-ConsoleApp.xml</DocumentationFile>
+    <DocumentationFile>bin/Debug/net9.0/OrbitalShell-ConsoleApp.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;1572;1573</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -58,8 +58,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.8.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
 </Project>

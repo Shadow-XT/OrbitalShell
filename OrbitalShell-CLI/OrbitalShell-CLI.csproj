@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>OrbitalShell</RootNamespace>
     <AssemblyName>orbsh</AssemblyName>
     <StartupObject>
@@ -43,40 +43,40 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
-    <DocumentationFile>bin/Debug/net5.0/orbsh.xml</DocumentationFile>
+    <DocumentationFile>bin/Debug/net9.0/orbsh.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;1572;1573</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <None Include="assets\robotazteque.ico">
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/assets/;content/assets/</PackagePath>
     </None>
     <None Include="assets\robotazteque.png">
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/assets/;content/assets/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/assets/;content/assets/</PackagePath>
     </None>
     <None Include="LICENSE.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/;content/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </None>
     <None Include="README.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/;content/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/;content/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </None>
     <None Include="scripts\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/scripts/;content/scripts/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/scripts/;content/scripts/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </None>
     <None Include="data\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/scripts/;content/scripts/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/scripts/;content/scripts/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </None>
   </ItemGroup>
@@ -92,7 +92,7 @@
     <None Update="Component\Shell\Defaults\.profile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>True</Pack>
-      <PackagePath>contentFiles/any/net5.0/Component/Shell/Defaults/;content/Component/Shell/Defaults/</PackagePath>
+      <PackagePath>contentFiles/any/net9.0/Component/Shell/Defaults/;content/Component/Shell/Defaults/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </None>
     <None Update="Component\Shell\settings.json">

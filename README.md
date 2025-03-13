@@ -6,8 +6,8 @@
 
 ![.NET](https://github.com/OrbitalShell/Orbital-Shell/workflows/.NET/badge.svg?branch=master)
 ![last commit](https://img.shields.io/github/last-commit/orbitalshell/Orbital-Shell?style=plastic)
-![releasever](https://img.shields.io/github/v/release/orbitalshell/Orbital-Shell?style=plastic) 
-![releasedate](https://img.shields.io/github/release-date/orbitalshell/Orbital-Shell?style=plastic) 
+![releasever](https://img.shields.io/github/v/release/orbitalshell/Orbital-Shell?style=plastic)
+![releasedate](https://img.shields.io/github/release-date/orbitalshell/Orbital-Shell?style=plastic)
 <br>
 ![openi](https://img.shields.io/github/issues/orbitalshell/Orbital-Shell)
 ![closei](https://img.shields.io/github/issues-closed/orbitalshell/Orbital-Shell)
@@ -43,13 +43,13 @@
 <a href="https://github.com/OrbitalShell/Orbital-Shell/tree/master/OrbitalShell-ConsoleApp" target="_new">OrbitalShell-ConsoleApp</a><br>
 <a href="https://github.com/OrbitalShell/Orbital-Shell/tree/master/OrbitalShell-Kernel" target="_new">OrbitalShell-Kernel</a><br>
 <a href="https://github.com/OrbitalShell/Orbital-Shell/tree/master/OrbitalShell-Kernel-Commands" target="_new">OrbitalShell-Kernel-Commands</a></td>
- 
+
 <td valign="top">
-net5.0 classlib<br>
-net5.0 classlib<br>
-net5.0 classlib
+net9.0 classlib<br>
+net9.0 classlib<br>
+net9.0 classlib
 </td>
- 
+
 <td valign="top">
 
 [![NuGetVersion](https://img.shields.io/nuget/v/OrbitalShell-ConsoleApp.svg)](https://www.nuget.org/packages/OrbitalShell-ConsoleApp) ![NuGetDownloads](https://img.shields.io/nuget/dt/OrbitalShell-ConsoleApp.svg)<br>
@@ -69,12 +69,12 @@ net5.0 classlib
 <td valign="top">
 <a href="https://github.com/OrbitalShell/Prompt-Git-Info/blob/main/README.md" target="_new">OrbitalShell-PromptGitInfo</a><br>
 <a href="https://github.com/OrbitalShell/Doom-Fire-Algo" target="_new">OrbitalShell-DoomFireAlgo</a><br>
- 
+
 <td valign="top">
-shell module (net5.0)<br>
-shell module (net5.0)
+shell module (net9.0)<br>
+shell module (net9.0)
 </td>
- 
+
 <td valign="top">
 
 [![NuGetVersion](https://img.shields.io/nuget/v/OrbitalShell-Module-PromptGitInfo.svg)](https://www.nuget.org/packages/OrbitalShell-Module-PromptGitInfo) ![NuGetDownloads](https://img.shields.io/nuget/dt/OrbitalShell-Module-PromptGitInfo.svg)<br>
@@ -99,7 +99,7 @@ shell module (net5.0)
 <a href="https://www.nuget.org/packages/OrbitalShell-linux-arm64/" targer="_new">OrbitalShell-linux-arm64</a><br>
 <a href="https://www.nuget.org/packages/OrbitalShell-osx-x64/" targer="_new">OrbitalShell-osx-x64</a><br>
 </td>
- 
+
 <td valign="top">
 CLI any <b>dotnet</b> platform*<br>
 CLI WIN x86<br>
@@ -109,7 +109,7 @@ CLI linux ARM<br>
 CLI linux ARM x64<br>
 CLI OSX x64<br>
 </td>
- 
+
 <td valign="top">
 
 [![NuGetVersion](https://img.shields.io/nuget/v/OrbitalShell.svg)](https://www.nuget.org/packages/OrbitalShell) ![NuGetDownloads](https://img.shields.io/nuget/dt/OrbitalShell.svg)<br>
@@ -136,7 +136,7 @@ CLI OSX x64<br>
 </tr>
 
 <tr>
- 
+
 <td valign="top">
 orbitalshell/orbital-shell
 </td>
@@ -159,11 +159,11 @@ https://hub.docker.com/r/orbitalshell/orbital-shell
 
 This shell integrates the <u>most usefull shell commands</u>, and is intented to be extended by coding new commands or downloading new commands modules within a repository of modules. Of course it can be entirely customized by using the features integrated to the shell (<u>scripts, functions, commands, aliases, settings, parametrization,...</u>). Having a strong <u>ANSI/VT-100-220-300-500</u> support, it provides structured and colorized display of data and information (support of <u>ASCII, Unicode and 24 bits colors</u>).
 
-Find any information and documentation about this project on the project's Web Site @ [Orbital SHell Git-Pages](https://orbitalshell.github.io/OrbitalShell/) 
+Find any information and documentation about this project on the project's Web Site @ [Orbital SHell Git-Pages](https://orbitalshell.github.io/OrbitalShell/)
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/2021-02-12 03_47_28-Window.png"/>
 
-Developers and users manuals are available in the project web site @ [Orbital SHell Git-Pages (documentation)](https://orbitalshell.github.io/OrbitalShell/documentation) 
+Developers and users manuals are available in the project web site @ [Orbital SHell Git-Pages (documentation)](https://orbitalshell.github.io/OrbitalShell/documentation)
 
 
 <br>
@@ -172,7 +172,7 @@ Developers and users manuals are available in the project web site @ [Orbital SH
 
 😄 We are looking for **collaborators** 👯 to help for evolving this tool ! If you **like** the **command line**, the **bash** syntax, programming **cli tools**, **parsers**, **data streams**, ANSI, C# 8, batch, and so on... you may like to develop orbital shell! Any idea, suggest, code, feedback is welcomed ! You can directly **FORK** the project @ [https://github.com/OrbitalShell/Orbital-Shell.git](https://github.com/OrbitalShell/Orbital-Shell.git) and start developing to prepare your first pull request, it will be well received. You can also peek **an issue** and start working on. Join the **orbital shell team** and get advantages of the team tools on github. We can contact 💬 by mail, skype and so on...
 
-You can directly **FORK** the project @ [https://github.com/OrbitalShell/Orbital-Shell.git](https://github.com/OrbitalShell/Orbital-Shell.git) and start developing to prepare your first pull request, it will be well received. You can also peek **an issue** and start working on. 
+You can directly **FORK** the project @ [https://github.com/OrbitalShell/Orbital-Shell.git](https://github.com/OrbitalShell/Orbital-Shell.git) and start developing to prepare your first pull request, it will be well received. You can also peek **an issue** and start working on.
 
 Join the **orbital shell team** and get advantages of the team tools on github. We can contact 💬 by mail, skype and so on...
 
@@ -180,10 +180,10 @@ Join the **orbital shell team** and get advantages of the team tools on github. 
   - read the project README @ [https://github.com/OrbitalShell/Orbital-Shell/blob/master/README.md](https://github.com/OrbitalShell/Orbital-Shell/blob/master/README.md)
   - visit the project's web site @ [https://orbitalshell.github.io/Orbital-Shell/](https://orbitalshell.github.io/OrbitalShell/)
   - visit the project repository @ [https://github.com/OrbitalShell/Orbital-Shell/](https://github.com/OrbitalShell/Orbital-Shell/)
-  
-**Join the project**: 
 
-## :fast_forward: :fast_forward: Join the project. You can send a mail to the project team @ [mailto://orbital-shell@outlook.fr](mailto://orbital-shell@outlook.fr) or to the maintener [me](mailto://franck.gaspoz@gmail.com) 
+**Join the project**:
+
+## :fast_forward: :fast_forward: Join the project. You can send a mail to the project team @ [mailto://orbital-shell@outlook.fr](mailto://orbital-shell@outlook.fr) or to the maintener [me](mailto://franck.gaspoz@gmail.com)
 - Curious / beginner / intermediate / expert are all welcomed!
 - A simple **hello** from you part and you will be welcomed and invited to join the project 👍 !
 - A simple **star** on the project main repo and you will also be invited 👋 !
@@ -205,7 +205,7 @@ There are a various subjects that can be treated:
 - Translates
 <br>
 
-  **The project team like to meet people and wish to share pleasure of programming and technology enthusiasm, with fun and good spirit** 
+  **The project team like to meet people and wish to share pleasure of programming and technology enthusiasm, with fun and good spirit**
 
 <br><br>
 
@@ -233,30 +233,30 @@ There are a various subjects that can be treated:
     - sequences of commands ( **|** ) and conditional sequences of commands ( **&&**, **||** ) <br> ![uncomplete](https://img.shields.io/badge/uncomplete-darkred?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/10)
     - groups of commands **(** .. **;** .. **)** <br> ![todo](https://img.shields.io/badge/todo-orange?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/11)
     - background execution ( **&** ) <br> ![todo](https://img.shields.io/badge/todo-orange?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/12)
-    - commands return a **result code** and can returns **values** <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
+    - commands return a **result code** and can returns **values** <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
       - When returning values and when specified, a pipe ( **|** ) between commands can **pass objects instead of streams** <br> ![uncomplete](https://img.shields.io/badge/uncomplete-darkred?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/13)
-  - **Cancellation** of commands execution **Task** (Ctrl-Z) <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
+  - **Cancellation** of commands execution **Task** (Ctrl-Z) <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
   - <u>**Batches of commands**</u> (scripts)
     - traditional batch of shell commands (.sh,.orbsh) <br> ![uncomplete](https://img.shields.io/badge/uncomplete-darkred?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/14)
     - C# language scripts (.cssh) <br> ![todo](https://img.shields.io/badge/todo-orange?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/15)
   - <u>**Variables**</u>
-    - Variables can store any data of **any C# object type**      
-      - The command line syntax has been extended to **support an object notation to indicate accessing an object member or invoking an object method** <br> ![uncomplete](https://img.shields.io/badge/uncomplete-darkred?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/16)       
+    - Variables can store any data of **any C# object type**
+      - The command line syntax has been extended to **support an object notation to indicate accessing an object member or invoking an object method** <br> ![uncomplete](https://img.shields.io/badge/uncomplete-darkred?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/16)
       - Integrates the os shell **environment variables** (with type **String**) <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
       - Are getted and setted with **$** (in any command arg), **set** and **=** <br> ![uncomplete](https://img.shields.io/badge/uncomplete-darkred?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/17)
     - **Functions** can be defined by a **shell script** or by a **C# compiled source** <br> ![todo](https://img.shields.io/badge/todo-orange?style=plastic)![issue](https://img.shields.io/github/issues/detail/state/orbitalshell/Orbital-Shell/18)
-    - **Aliases** for command names <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
-    - **Shell environment** : the shell initialization feature deploy and setup a shell environment for the current user (profile folder and initialization scripts: *.profile*,*.alias*,*.history*,*.orbsh*) <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
+    - **Aliases** for command names <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
+    - **Shell environment** : the shell initialization feature deploy and setup a shell environment for the current user (profile folder and initialization scripts: *.profile*,*.alias*,*.history*,*.orbsh*) <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
   - **Extensibility**:
-    - The default command line grammar can be changed to get other syntaxes (***zsh***, ***DOS***,...) or a new one <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
-    - The command line engine can be overriden and extended to enhance the existing features (auto complete inputs,parsing inputs,running commands,...) <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
-    - **A simple way to define shell commands** using C# method and parameters attributes, avoiding the developer to handle syntax analyzing and shell integration (command help, pipelines, standard stream redirections) councerns, allowing to support either simple values types (int,float,string,date time,..) and object types (even generic collection), and that can interacts together and with the shell throught data objects <br> ![done](https://img.shields.io/badge/done-green?style=plastic) 
+    - The default command line grammar can be changed to get other syntaxes (***zsh***, ***DOS***,...) or a new one <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
+    - The command line engine can be overriden and extended to enhance the existing features (auto complete inputs,parsing inputs,running commands,...) <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
+    - **A simple way to define shell commands** using C# method and parameters attributes, avoiding the developer to handle syntax analyzing and shell integration (command help, pipelines, standard stream redirections) councerns, allowing to support either simple values types (int,float,string,date time,..) and object types (even generic collection), and that can interacts together and with the shell throught data objects <br> ![done](https://img.shields.io/badge/done-green?style=plastic)
 
     ``` csharp
     // a Unix rm command implementation:
     [Command("remove file(s) and/or the directory(ies)")]
-    public 
-        CommandResult<(List<FileSystemPath> items, FindCounts counts)> 
+    public
+        CommandResult<(List<FileSystemPath> items, FindCounts counts)>
         Rm(
             CommandEvaluationContext context,
             [Parameter("file or folder path")] WildcardFilePath path,
@@ -273,9 +273,9 @@ There are a various subjects that can be treated:
         if (path.CheckExists(context))
         {
             var items = FindItems(context, path.FullName, path.WildCardFileName ?? "*", !recurse, true, false, !noattributes, !recurse, null, false, counts, false, false);
-            
+
             /* ... */
-            
+
             return new CommandResult<(List<FileSystemPath>, FindCounts)>((r, counts), ReturnCode.OK);
         }
         else
@@ -284,7 +284,7 @@ There are a various subjects that can be treated:
     ```
 
   - such a command will be auto documented like this by the shell **help command**:
-  
+
     <img src="assets/2021-02-12%2014_28_35-Window.png"/>
 
 <br>
