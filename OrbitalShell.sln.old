@@ -23,8 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitalShell-UnitTests", "O
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{00101C60-1864-48B1-98FC-A51B0E54D155}"
 	ProjectSection(SolutionItems) = preProject
-		docs\_config.yml = docs\_config.yml
 		docs\README.md = docs\README.md
+		docs\_config.yml = docs\_config.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitalShell-WebAPI", "OrbitalShell-WebAPI\OrbitalShell-WebAPI.csproj", "{7358D4CC-FF77-47E1-90B4-5E5ECB22A5E8}"

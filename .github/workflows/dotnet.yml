@@ -14,16 +14,16 @@ jobs:
     strategy:
       matrix:
         os: [ 'ubuntu-latest', 'windows-latest', 'macOs-latest' ]
-        dotnet-version: [ '5.0' ]
+        dotnet-version: [ '9.0' ]
 
     runs-on: ${{ matrix.os }}
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
 
@@ -40,7 +40,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 
     - name: Store Artifact
-      uses: actions/upload-artifact@main
+      uses: actions/upload-artifact@v4
       with:
         name: Orbital Shell artifacts - ${{ matrix.os }}
-        path: ./OrbitalShell-CLI/bin/Debug/net8.0/
+        path: ./OrbitalShell-CLI/bin/Debug/net9.0/

@@ -13,7 +13,7 @@ $logsDir = "upgrade-assistant.log"
 foreach ($project in $projects) {
     Write-Host "================================================================="
     Write-Host "Upgrade Project $($project.Split('\')[-2])"
-    $out = upgrade-assistant upgrade $project --non-interactive --operation Inplace --targetFramework net8.0
+    $out = upgrade-assistant upgrade $project --non-interactive --operation Inplace --targetFramework net9.0
     $out >> $logsDir
     $result =  $($out -split "`n")[-1]
     Write-Host "    $result"

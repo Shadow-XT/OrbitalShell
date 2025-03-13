@@ -1,0 +1,53 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/" />
+  <Folder Name="/Solution Items/doc/">
+    <File Path="doc/echo-primtives.md" />
+    <File Path="doc/README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/doc/assets/">
+    <File Path="doc/assets/2021-02-12 03_47_28-Window.png" />
+    <File Path="doc/assets/2021-02-12 14_28_35-Window.png" />
+    <File Path="doc/assets/orbital-shell.png" />
+    <File Path="doc/assets/pegi46small.png" />
+    <File Path="doc/assets/robotazteque.png" />
+    <File Path="doc/assets/shell-wt-1.0.8-2.png" />
+    <File Path="doc/assets/tra4brains.png" />
+  </Folder>
+  <Folder Name="/Solution Items/docs/">
+    <File Path="docs/README.md" />
+    <File Path="docs/_config.yml" />
+  </Folder>
+  <Folder Name="/Solution Items/module-index-repository/">
+    <File Path="module-index-repository/module-list.json" />
+    <File Path="module-index-repository/readme.txt" />
+  </Folder>
+  <Folder Name="/Solution Items/repo-info/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/scripts/">
+    <File Path="scripts/build.sh" />
+    <File Path="scripts/run.sh" />
+  </Folder>
+  <Project Path="OrbitalShell-CLI/OrbitalShell-CLI.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-ConsoleApp/OrbitalShell-ConsoleApp.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-Kernel-Commands/OrbitalShell-Kernel-Commands.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-Kernel/OrbitalShell-Kernel.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="OrbitalShell-UnitTests/OrbitalShell-UnitTests.csproj" />
+  <Project Path="OrbitalShell-WebAPI/OrbitalShell-WebAPI.csproj" />
+</Solution>

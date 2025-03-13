@@ -5,7 +5,7 @@
 rep=`pwd`
 
 cd /mnt/c/TFS/orbital-shell/
-echo "lanching orbsh ..."
+echo "launching orbsh ..."
 sudo dotnet run --no-build --no-restore --project OrbitalShell-CLI/OrbitalShell-CLI.csproj -v n
 
 cd $rep

@@ -16,12 +16,12 @@ echo "(br)(b=darkgreen,f=black)dotnet publish(rdc)(br)"
 
 # framework-dependent
 
-echo "(br)(f=green) publish framework-dependent binaries: (b=darkgreen,f=yellow)net8.0 (rdc)(br)"
-dotnet publish --configuration Release --output bin/publish/net8.0/
+echo "(br)(f=green) publish framework-dependent binaries: (b=darkgreen,f=yellow)net9.0 (rdc)(br)"
+dotnet publish --configuration Release --output bin/publish/net9.0/
 
 # framework-independent (self-contained) - current plateforms
 
-echo "(br)(f=green)publish self-contained binaries: (b=darkgreen,f=yellow)net8.0(rdc)(br)"
+echo "(br)(f=green)publish self-contained binaries: (b=darkgreen,f=yellow)net9.0(rdc)(br)"
 dotnet publish --runtime win-x64 --configuration Release --output bin/publish/win-x64/
 
 echo "(br)(f=green)publish self-contained binaries: (b=darkgreen,f=yellow)linux-x64(rdc)(br)"
@@ -44,7 +44,7 @@ dotnet publish --runtime osx-x64 --configuration Release --output bin/publish/os
 cd build
 echo "(br)(b=darkgreen,f=black)nuget publish(rdc)(br)"
 
-echo "(br)(f=green)nuget publish framework-dependent binaries: (b=darkgreen,f=yellow)net8.0 (rdc)(br)"
+echo "(br)(f=green)nuget publish framework-dependent binaries: (b=darkgreen,f=yellow)net9.0 (rdc)(br)"
 echo "(b=darkgreen,f=yellow)PACK(rdc)"
 nuget pack OrbitalShell.nuspec -Properties version=$version
 echo "(b=darkgreen,f=yellow)PUSH(rdc)"

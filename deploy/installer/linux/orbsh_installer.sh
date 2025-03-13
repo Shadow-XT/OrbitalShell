@@ -11,7 +11,7 @@ VERSION="10"
 
 APP_PATH="/usr/local"
 APP_NAME="Orbital-Shell"
-BUILD_PATH="OrbitalShell-CLI/bin/Debug/net8.0"
+BUILD_PATH="OrbitalShell-CLI/bin/Debug/net9.0"
 
 
 ## Main script
