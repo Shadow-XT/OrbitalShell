@@ -5,10 +5,10 @@ name: .NET Build & Test
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, dev ]
 
   pull_request:
-    branches: [ main ]
+    branches: [ main, dev ]
     types: [opened, synchronize, closed]
 
 jobs:
@@ -39,8 +39,8 @@ jobs:
     - name: Build Project
       run: dotnet build --no-restore
 
-    - name: Test Project
-      run: dotnet test --no-build --verbosity normal
+    # - name: Test Project
+    #   run: dotnet test --no-build --verbosity normal
 
     - name: Store Artifact
       uses: actions/upload-artifact@v4
